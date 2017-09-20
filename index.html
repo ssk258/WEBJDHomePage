@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+                user-scalable=0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>京东首页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+
+    <script rel="script" src="js/common.js" ></script>
+    <script rel="script" src="js/index.js"></script>
+    <script rel="script" src="js/jquery-1.9.1/jquery.js"></script>
+    <script rel="script" src="js/jquery-1.9.1/swiper-3.4.2.jquery.min.js"></script>
+</head>
+<body>
+<!-- 版心容器 在320-640自适应-->
+<div class="jd_container">
+        <!--顶部搜索-->
+    <header class="jd_search">
+        <div class="jd_search_box">
+            <a href="#" class="icon_logo">JD</a>
+
+            <form action="#">
+                <span class="icon_search"></span>
+                <input type="search" placeholder="iphone7 plus free">
+            </form>
+            <a href="#" class="login">登录</a>
+        </div>
+    </header>
+        <!--轮播图-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#" class="jd_banner_a"><img src="img/banner1.jpg"></a></div>
+            <div class="swiper-slide"><a href="#" class="jd_banner_a"><img src="img/banner2.jpg"></a></div>
+            <div class="swiper-slide"><a href="#" class="jd_banner_a"><img src="img/banner3.jpg"></a></div>
+            <div class="swiper-slide"><a href="#" class="jd_banner_a"><img src="img/banner4.jpg"></a></div>
+            <div class="swiper-slide"><a href="#" class="jd_banner_a"><img src="img/banner5.jpg"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+        <!-- 导航栏-->
+    <nav class="jd_nav">
+        <ul class="cleanfix">
+            <li><a><img src="img/nav01.png"><p>京东超市</p></a></li>
+            <li><a><img src="img/nav02.png"><p>全球购</p></a></li>
+            <li><a><img src="img/nav03.png"><p>服装城</p></a></li>
+            <li><a><img src="img/nav04.png"><p>京东生鲜</p></a></li>
+            <li><a><img src="img/nav05.png"><p>京东到家</p></a></li>
+            <li><a><img src="img/nav06.png"><p>充值缴费</p></a></li>
+            <li><a><img src="img/nav07.png"><p>领京豆</p></a></li>
+            <li><a><img src="img/nav08.png"><p>领券</p></a></li>
+            <li><a><img src="img/nav09.png"><p>惠赚钱</p></a></li>
+            <li><a><img src="img/nav10.png"><p>物流查询</p></a></li>
+        </ul>
+
+    </nav>
+        <!-- 产品区块-->
+    <div class="jd_product">
+        <section class="jd_proBox cleanfix">
+            <!--头部导航-->
+            <div class="jd_proBox_tit nb">
+                <div class="f_left">
+                    <span class="sk_icon f_left"></span>
+                    <span class="sk_text">掌上秒杀</span>
+                    <span class="sk_time">
+                        <span class="sk_time_black">0</span>
+                        <span class="sk_time_black">0</span>
+                        <span class="f_left">:</span>
+                        <span class="sk_time_black">0</span>
+                        <span class="sk_time_black">0</span>
+                        <span class="f_left">:</span>
+                        <span class="sk_time_black">0</span>
+                        <span class="sk_time_black">0</span>
+                    </span>
+                </div>
+                <div class="f_right">
+                    <a href="#" class="mr10">更多></a>
+                </div>
+            </div>
+            <!--产品内容-->
+            <div class="jd_proBox_cont cleanfix">
+                <ul>
+                    <li class="f_left">
+                        <a><img src="img/product01.jpg"></a>
+                        <span class="jd_pro_now_price">￥220</span>
+                        <del class="jd_pro_old_price">￥500</del>
+                    </li>
+                    <li class="f_left">
+                        <a><img src="img/product01.jpg"></a>
+                        <span class="jd_pro_now_price">￥220</span>
+                        <del class="jd_pro_old_price">￥500</del>
+                    </li>
+                    <li class="f_left">
+                        <a><img src="img/product01.jpg"></a>
+                        <span class="jd_pro_now_price">￥220</span>
+                        <del class="jd_pro_old_price">￥500</del>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="jd_proBox cleanfix">
+            <div class="jd_proBox_tit">
+                <span class="vertical_line"></span>
+                <h3>京东超市</h3>
+            </div>
+            <div class="jd_store cleanfix">
+                <a href="#" class="f_left h_p100 b_right w_p50"><img src="img/pro_left.png" /></a>
+                <a href="#" class="f_right h_p50  b_bottom w_p50"><img src="img/pro_right_top.png" /></a>
+                <a href="#" class="f_right h_p50  w_p50"><img src="img/pro_right_bottom.png" /></a>
+            </div>
+        </section>
+        <section class="jd_proBox cleanfix">
+            <div class="jd_proBox_tit">
+                <span class="vertical_line"></span>
+                <h3>京东自营</h3>
+            </div>
+            <div class="jd_self_store">
+                <a href="#" class="f_left h_p50 b_right b_bottom w_p50"><img src="img/pro2_right_top.png" /></a>
+                <a href="#" class="f_right h_p100 w_p50"><img src="img/pro2_left.png" /></a>
+                <a href="#" class="f_left h_p50 b_right w_p50"><img src="img/pro2_right_button.png" /></a>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+</body>
+</html>
