@@ -3,7 +3,9 @@
 window.onload=function () {
 
     /**窗口上滑距离**/
-    $(window).scroll(headScroll);
+    window.addEventListener('scroll',function () {
+        headScroll();
+    });
 
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
@@ -20,19 +22,13 @@ window.onload=function () {
 
 
 function headScroll() {
-    var alpha=$(window).scrollTop()/100<1?$(window).scrollTop()/100:1;
-
-    $(".jd_search_box").css({
-        background: "rgba(216,80,92,"+alpha+")"
-    });
-    if(alpha>0.5)
-        $(".icon_logo").css({
-            color:"#fff"
-        })
+    var opacity=window.scrollY/100<1?window.scrollY/100:1;
+    var search_box= document.getElementsByClassName("jd_search_box");
+    search_box[0].style.backgroundColor ="rgba(216,80,92,"+opacity+")";
+    var icon_logo=document.getElementsByClassName("icon_logo");
+    if(opacity>0.5)
+        icon_logo[0].style.color="#fff";
     else
-        $(".icon_logo").css({
-            color:"#d8505c"
-        })
-
+        icon_logo[0].style.color="#d8505c";
 }
 
