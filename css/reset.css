@@ -2,7 +2,6 @@ body {
     background: #f5f5f5;
 }
 
-
 *,
 ::before,       /**选中所有元素和为元素**/
 ::after{

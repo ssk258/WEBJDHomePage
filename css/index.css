@@ -1,3 +1,4 @@
+html, body{ margin:0; padding:0;height:100%; }  /*加上这个高度100%才有用*/
 .jd_container {
     width: 100%;
     min-width: 320px;
@@ -180,12 +181,33 @@
 .jd_proBox .jd_proBox_cont {
     width:100%;
     padding: 7px 0;
+    overflow: hidden;
 }
 .jd_proBox .jd_proBox_cont ul{
-    width:100%;
+    width:200%;
 }
 .jd_proBox .jd_proBox_cont ul li{
-    width:33.33%;
+    width:16%;
+}
+
+.jd_proBox .jd_proBox_cont ul li:last-child{
+    width:4%;
+    height: 100%;
+    margin-top: 10px;
+ }
+.jd_proBox .jd_proBox_cont ul li:last-child span:first-child{
+    display: block;
+    width:7px;
+    height: 14px;
+    background: url(../img/57cf8c66Ne0e9a6f4.png) -185px -50px;
+    background-size: 200px,200px;
+    margin: 0 auto;
+}
+.jd_proBox .jd_proBox_cont ul li:last-child span:last-child{
+    font-size: 12px;
+    display: block;
+    width:12px;
+    margin: 0 auto;
 }
 .jd_proBox .jd_proBox_cont ul li a{
     width:100%;

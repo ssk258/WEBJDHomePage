@@ -1,16 +1,27 @@
 
 
 window.onload=function () {
-
     /**窗口上滑距离**/
     window.addEventListener('scroll',function () {
         headScroll();
     });
+    var iscroll= new IScroll(document.querySelector(".jd_proBox_cont"),{
+        scrollX: true,
+        scrollY: false,
+        hScrollbar:false,
+        vScrollbar : false,
+        vScroll:false,
+        hScroll: true,
+        eventPassthrough: true,
+
+    });
+
+
     //设置倒计时时间
-    setSkTime(10,0,01);
+    setSkTime(10,0,1);
     ///开始倒计时
     setInterval(startSkTime,1000);
-    var mySwiper = new Swiper ('.swiper-container', {
+    new Swiper ('.swiper-container', {
         direction: 'horizontal',
         autoplay : 5000,
         autoplayDisableOnInteraction: false,
@@ -19,7 +30,8 @@ window.onload=function () {
         loop: true,
         pagination : '.swiper-pagination',
         freeMode:false
-    })
+    });
+
 
 }
 
